@@ -1,7 +1,9 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
+  
 }
 
 .save-note {
@@ -15,8 +17,8 @@ html, body {
   cursor: pointer;
 }
 
-.note-textarea, .note-title {
-  color: #000000;
+.note-textarea,
+.note-title {
   width: 100%;
   outline: none;
   border: none;
@@ -26,6 +28,7 @@ html, body {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
+  color: black;
 }
 
 .note-title {
@@ -34,8 +37,9 @@ html, body {
   font-size: 3rem;
 }
 
-.note-title:read-only, .note-textarea:read-only {
-  color: #757575;
+.note-title:read-only,
+.note-textarea:read-only {
+  color: black;
 }
 
 .list-container .card {
@@ -43,6 +47,7 @@ html, body {
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+
 }
 
 .list-container {
@@ -55,11 +60,22 @@ html, body {
   border-top: none;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  background-color: #dfe1ff;
+
+}
+
+.list-item-title {
+  display: inline-block;
+  width: 75%;
+  background-color: #dfe1ff;
+
 }
 
 .list-container i {
   font-size: 1.1rem;
   cursor: pointer;
+  background-color: #dfe1ff;
+
 }
 
 .list-container .list-group-item {
@@ -67,4 +83,11 @@ html, body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+  background-color: #dfe1ff;
+  color: black;
+}
+
+*{
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
 }
